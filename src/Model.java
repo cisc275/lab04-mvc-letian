@@ -34,7 +34,7 @@ public class Model{
     Random r = new Random();
     
     public Model(int width, int height, int imageWidth, int imageHeight) {
-    	//System.out.println(this.direct);
+    	
     	
 		this.width = width;
 		this.height = height;
@@ -64,7 +64,7 @@ public class Model{
 		
 		
 		if(x < (width-imageWidth) && (x > 0) && (y < (height - imageWidth)) &&  (y > 0)) {
-//			System.out.println(this.direct);
+
 			switch(direct) {
 			case NORTHWEST: 
 				x-=xIncr;

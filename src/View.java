@@ -79,12 +79,7 @@ public class View extends JPanel{
 	}
     
     public View(){
-    	frame = new JFrame();
-    	frame.getContentPane().add(this);
-    	frame.setBackground(Color.gray);
-    	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    	frame.setSize(width, height);
-    	frame.setVisible(true);
+    	
     	
     	HashMap<Direction,BufferedImage> orcMoves = createImage();
     	for(Direction key: orcMoves.keySet()) {
@@ -95,6 +90,13 @@ public class View extends JPanel{
     		}
     		picsFile.put(key, pics);	
     	}
+    	
+    	frame = new JFrame();
+    	frame.getContentPane().add(this);
+    	frame.setBackground(Color.gray);
+    	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	frame.setSize(width, height);
+    	frame.setVisible(true);
     	
     	
     	
